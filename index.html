@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EasyDevelop — Plataforma completa de desenvolvimento de software</title>
+  <meta name="description" content="EasyDevelop é uma plataforma completa para planejar, criar, testar, publicar e monitorar software — tudo em um só lugar." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2216%22 fill=%22%230a84ff%22/><path d=%22M19 54l13-23 13 23h-8l-5-9-5 9h-8Zm32-12c0-6 4-10 10-10s10 4 10 10-4 10-10 10h-6v10h-8V42Zm14 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0Z%22 fill=%22white%22/></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="logo" aria-label="EasyDevelop">
+      <span class="logo-mark" aria-hidden="true">{"</>"}</span>
+      <span class="logo-text">EasyDevelop</span>
+    </a>
+    <nav class="nav" aria-label="Navegação primária">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">&#9776;</button>
+      <ul id="nav-menu" class="nav-menu">
+        <li><a href="#solucao">Solução</a></li>
+        <li><a href="#modulos">Módulos</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="actions">
+      <button class="btn ghost" id="themeToggle" aria-label="Alternar tema">🌗</button>
+      <a class="btn" href="#comece" id="ctaHeader">Começar agora</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="comece">
+      <div class="hero-content">
+        <h1>Construa, publique e <span class="highlight">escale</span> software — sem fricção</h1>
+        <p class="lead">Uma plataforma unificada que integra <strong>planejamento</strong>, <strong>dev</strong>, <strong>CI/CD</strong>,
+          <strong>observabilidade</strong> e <strong>segurança</strong>. Produtividade real do commit ao deploy.</p>
+        <div class="cta-row">
+          <button class="btn xl" id="btnAbrirCadastro">Criar conta gratuita</button>
+          <a class="btn ghost xl" href="#solucao">Ver como funciona</a>
+        </div>
+        <div class="hero-badges" role="list" aria-label="Destaques">
+          <span role="listitem">💡 Boards ágeis</span>
+          <span role="listitem">🧪 Testes automáticos</span>
+          <span role="listitem">🚀 Deploy 1‑clique</span>
+          <span role="listitem">📈 Logs e métricas</span>
+          <span role="listitem">🔐 SAST/DAST integrados</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="terminal">
+<pre><code>$ git push origin main
+▶ Build #482 iniciado...
+✓ Testes: 327 passaram
+✓ Segurança: 0 vulnerabilidades
+✓ Deploy: produção (us-east) ok
+✔ Sua release está no ar em 1m42s!</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solucao">
+      <div class="container">
+        <h2>Por que <span class="underline">EasyDevelop</span>?</h2>
+        <p class="section-lead">Centralize seu ciclo de vida de desenvolvimento em uma plataforma única. Menos context switch, mais resultado.</p>
+
+        <div class="grid features">
+          <article class="card">
+            <div class="icon" aria-hidden="true">⚡</div>
+            <h3>Pipelines CI/CD</h3>
+            <p>Builds paralelos, cache inteligente e deploy azul/verde para zero downtime.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🧰</div>
+            <h3>DevSpaces</h3>
+            <p>Ambientes de dev efêmeros em contêiner — prontos com suas dependências.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🔭</div>
+            <h3>Observabilidade</h3>
+            <p>Logs centralizados, métricas, traces e alertas com apenas alguns cliques.</p>
+          </article>
+          <article class="card">
+            <div class="icon" aria-hidden="true">🛡️</div>
+            <h3>Segurança</h3>
+            <p>Varredura de dependências, secret scanning e políticas como código.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="modulos">
+      <div class="container">
+        <h2>Módulos da plataforma</h2>
+        <div class="grid modules">
+          <article class="card h">
+            <header>
+              <h3>Plan & Track</h3>
+              <p>Kanban, sprints, OKRs e relatórios.</p>
+            </header>
+            <ul class="list">
+              <li>Modelos de fluxo prontos</li>
+              <li>Automação com regras</li>
+              <li>Integração com Git</li>
+            </ul>
+          </article>
+
+          <article class="card h">
+            <header>
+              <h3>Code & Review</h3>
+              <p>Repositórios Git, PRs e revisão inteligente.</p>
+            </header>
+            <ul class="list">
+              <li>Template de PRs e checks</li>
+              <li>Diff semântico</li>
+              <li>Proteção de branches</li>
+            </ul>
+          </article>
+
+          <article class="card h">
+            <header>
+              <h3>Test & Quality</h3>
+              <p>Testes unitários, integração e cobertura.</p>
+            </header>
+            <ul class="list">
+              <li>Relatórios de cobertura</li>
+              <li>Flakiness detector</li>
+              <li>Test data sandbox</li>
+            </ul>
+          </article>
+
+          <article class="card h">
+            <header>
+              <h3>Deploy & Runtime</h3>
+              <p>Infra gerenciada, autoscale e rollbacks.</p>
+            </header>
+            <ul class="list">
+              <li>Deploy 1‑clique</li>
+              <li>Blue/Green e Canary</li>
+              <li>Ambientes por ramificação</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="precos">
+      <div class="container">
+        <h2>Preços simples</h2>
+        <p class="section-lead">Comece grátis. Escale quando precisar.</p>
+
+        <div class="pricing">
+          <label class="switch">
+            <input type="checkbox" id="billingSwitch" aria-label="Alternar cobrança mensal/anual" />
+            <span>Faturar anualmente (2 meses grátis)</span>
+          </label>
+
+          <div class="grid pricing-cards">
+            <article class="card price">
+              <h3>Starter</h3>
+              <p class="price-value" data-monthly="R$0" data-yearly="R$0">R$0</p>
+              <ul class="list">
+                <li>5 usuários</li>
+                <li>CI/CD 300 minutos/mês</li>
+                <li>Projetos ilimitados</li>
+              </ul>
+              <button class="btn full">Começar</button>
+            </article>
+
+            <article class="card price featured">
+              <h3>Growth</h3>
+              <p class="price-value" data-monthly="R$59" data-yearly="R$49">R$59</p>
+              <ul class="list">
+                <li>Usuários ilimitados</li>
+                <li>CI/CD 3000 minutos/mês</li>
+                <li>Observabilidade básica</li>
+                <li>Suporte em horário comercial</li>
+              </ul>
+              <button class="btn full">Experimentar</button>
+            </article>
+
+            <article class="card price">
+              <h3>Enterprise</h3>
+              <p class="price-value" data-monthly="Fale conosco" data-yearly="Fale conosco">Fale conosco</p>
+              <ul class="list">
+                <li>SSO/SAML, SSO IdP</li>
+                <li>VPC dedicada</li>
+                <li>Suporte 24/7</li>
+              </ul>
+              <a class="btn full ghost" href="#contato">Contato comercial</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="faq">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <details>
+          <summary>Posso migrar de outra ferramenta?</summary>
+          <p>Sim. Importamos repositórios, issues, pipelines e artefatos das principais plataformas.</p>
+        </details>
+        <details>
+          <summary>Há limite de projetos?</summary>
+          <p>Não. Você pode organizar quantos projetos precisar e gerenciá-los por workspaces.</p>
+        </details>
+        <details>
+          <summary>Onde ficam os dados?</summary>
+          <p>Os dados são hospedados em provedores globais com criptografia em repouso e em trânsito.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container">
+        <h2>Fale com a EasyDevelop</h2>
+        <form class="form" id="formContato" novalidate>
+          <div class="grid form-grid">
+            <label>Nome
+              <input type="text" name="nome" required placeholder="Seu nome" />
+              <span class="error" aria-live="polite"></span>
+            </label>
+            <label>E‑mail
+              <input type="email" name="email" required placeholder="seu@email.com" />
+              <span class="error" aria-live="polite"></span>
+            </label>
+          </div>
+          <label>Mensagem
+            <textarea name="mensagem" rows="4" required placeholder="Conte um pouco sobre sua necessidade"></textarea>
+            <span class="error" aria-live="polite"></span>
+          </label>
+          <button class="btn" type="submit">Enviar</button>
+          <p class="form-success" role="status" hidden>Obrigado! Retornaremos em breve.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-grid">
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true">{"</>"}</span>
+        <strong>EasyDevelop</strong>
+        <span class="muted">© <span id="year"></span> — Todos os direitos reservados.</span>
+      </div>
+      <nav class="foot-nav" aria-label="Rodapé">
+        <a href="#solucao">Solução</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#precos">Preços</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Modal de cadastro -->
+  <dialog id="modalCadastro" class="modal">
+    <form id="formCadastro" method="dialog">
+      <header>
+        <h3>Crie sua conta</h3>
+        <button type="button" class="icon-btn" id="btnFecharModal" aria-label="Fechar">✕</button>
+      </header>
+      <label>Empresa
+        <input type="text" name="empresa" required placeholder="Nome da empresa" />
+        <span class="error"></span>
+      </label>
+      <label>Seu e‑mail de trabalho
+        <input type="email" name="email" required placeholder="voce@empresa.com" />
+        <span class="error"></span>
+      </label>
+      <label>Senha
+        <input type="password" name="senha" minlength="8" required placeholder="Mínimo 8 caracteres" />
+        <span class="error"></span>
+      </label>
+      <menu>
+        <button class="btn ghost" value="cancel">Cancelar</button>
+        <button class="btn" value="confirm">Criar conta</button>
+      </menu>
+      <p class="fineprint">Ao continuar você concorda com os Termos de Uso e Política de Privacidade.</p>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
